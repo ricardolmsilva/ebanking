@@ -1,0 +1,68 @@
+
+    <div class="row">
+        <div class="col-4">
+            <img src="../assets/images/piggy-bank.png" alt="" class="img-fluid">
+        </div>
+        <div class="col-4">
+            <span>Piggy Bank</span>
+        </div>
+        <div class="col-4">
+            <a href="home-page.html" class="btn btn-primary btn-lg active w-100" role="button"
+               aria-pressed="true">Voltar
+            </a>
+        </div>
+    </div>
+
+    <div class="row">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-white">
+                <li class="breadcrumb-item"><a href="home-page.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Pagamentos</li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="row">
+        <div class="col-12 text-left border-bottom">
+            <h5>Fazer pagamento</h5>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <form action="home-page.html" method="post">
+
+                <div class="form-group">
+                    <label for="entity">Entidade</label>
+                    <input type="number" min="10000" max="99999" class="form-control w-25" id="entity" />
+                </div>
+
+                <div class="form-group">
+                    <div class="form-row">
+                        <div class="col-12">
+                            <label>Referência</label>
+                        </div>
+                        <div class="col-4">
+                            <input type="number" min="100" max="999" class="form-control" id="referency1" />
+                        </div>
+                        <div class="col-4">
+                            <input type="number" min="100" max="999" class="form-control" id="referency2" />
+                        </div>
+                        <div class="col-4">
+                            <input type="number" min="100" max="999" class="form-control" id="referency3" />
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="montante">Montante</label>
+                    <input type="number" class="form-control w-25" id="montante" />
+                </div>
+
+                <div class="col-12 text-right">
+                    <button type="submit" class="btn btn-primary w-25">Pagar</button>
+                </div>
+            </form>
+        </div>
+    </div>

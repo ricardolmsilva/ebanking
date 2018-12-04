@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>eBanking</title>
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.4.1.3.min.css" />
+
+    <link rel="stylesheet" href="../assets/css/app.css" />
+
+
+</head>
+<body>
+
+<div class="container-fluid py-2">
+    <div class="row">
+        <div class="col-4">
+            <img src="../assets/images/piggy-bank.png" alt="" class="img-fluid">
+        </div>
+        <div class="col-4">
+            <span>Piggy Bank</span>
+        </div>
+        <div class="col-4">
+            <a href="home-page.html" class="btn btn-primary btn-lg active w-100" role="button"
+               aria-pressed="true">Voltar
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-white">
+                <li class="breadcrumb-item"><a href="home-page.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Transferências</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+<div class="container-fluid pt-5">
+    <div class="row">
+        <div class="col-12 text-left border-bottom">
+            <h5>Fazer transferência</h5>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid py-5">
+    <div class="row">
+        <div class="col-12">
+            <form action="home-page.html" method="post">
+
+                <div class="form-group">
+                    <div class="form-row">
+                        <div class="col-12">
+                            <label>IBAN destino</label>
+                        </div>
+                        <div class="col-4">
+                            <input type="number" min="1000000" max="9999999" class="form-control" name="referency1" />
+                        </div>
+                        <div class="col-4">
+                            <input type="number" min="1000000" max="9999999" class="form-control" name="referency2" />
+                        </div>
+                        <div class="col-4">
+                            <input type="number" min="1000000" max="9999999" class="form-control" name="referency3" />
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="montante">Valor</label>
+                    <input type="number" class="form-control" id="montante" name="montante" />
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Descrição</label>
+                    <textarea class="form-control" id="description" rows="3" name="description"></textarea>
+                </div>
+
+
+                <div class="col-12 text-right">
+                    <button type="submit" class="btn btn-primary w-25">Transferir</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
