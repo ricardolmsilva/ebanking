@@ -27,5 +27,4 @@ app.config(function ($routeProvider)
     .otherwise({
         template : "<h1>Not found!</h1><p>Are you lost?</p>"
     });
-
 });

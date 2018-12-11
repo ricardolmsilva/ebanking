@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-12">
-        <form name="loginForm" novalidate>
+        <form name="loginForm" ng-submit="signIn()" novalidate>
             <div class="form-group">
                 <label for="contractNumber">Nº de Contrato</label>
                 <input type="text"
@@ -44,10 +44,12 @@
 
             <pre>{{loginForm.password.$error | json}}</pre>
 
-            <button type="submit" ng-click="signIn()"
+            <button type="submit"
                     class="btn btn-primary w-100"
                     ng-disabled="loginForm.$valid == false">
                 Entrar</button>
         </form>
+
+        <h5 class="text-danger" ng-show="error !=null">{{error}}</h5>
     </div>
 </div>
